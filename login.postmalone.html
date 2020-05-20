@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="fontawesome-free-5.11.2-web/fontawesome-free-5.11.2-web/css/all.css">
+	<link rel="stylesheet" href="CSS/Homepage.css">
+	<link rel="stylesheet" href="CSS/postmalone.css">
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="JS/search.js"></script>
+	<script src="JS/login.js"></script>
+	
+
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+</head>
+
+<body>
+	<!--HEADER-START -->
+	<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top" role="navigation">
+  		<a class="navbar-brand" href="login.index.html">
+			<h3 class="font-weight-bold" style="color:teal">KQT 
+				<span class="text-dark">music</span>	
+			</h3>
+		</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
+  		<div class="collapse navbar-collapse" id="mainmenu" >
+    		<ul class="navbar-nav col-md-6 col-xs-12">
+      			<li class="nav-item active">
+				<a href="login.index.html" class="nav-link">Home</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.news.html" class="nav-link">News</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.genres.html" class="nav-link">Genres</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.artist.html" class="nav-link">Artist</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.albums.html" class="nav-link">Album</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.intrument.html" class="nav-link">Instrument</a>
+				</li>
+			<li class="nav-item dropdown-submenu">
+				<a href="#" class="nav-link dropdown" data-toggle="dropdown">About Us</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="login.terms of use.html" class="dropdown-item">Terms of Use</a>
+					</li>
+					<li>
+						<a href="login.privacy policy.html" class="dropdown-item">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="login.about our ads.html" class="dropdown-item">About our Ads</a>
+					</li>
+		
+				</ul>
+			</li>
+    		</ul>
+				<form class="form-inline col-md-4 col-xs-12">
+						<div class="form-group">
+						<div class="input-group">
+						<input type="text" placeholder="Search album or artist.."
+				  		 class="form-control" id="h" onKeyUp="pa(this.value)">
+						<div class="input-group-append">
+						<a href="login.not result.html" class="fas fa-search" id="link"></a>
+						
+						</div>
+						</div>
+						</div>
+				</form>
+			<div class="registered btn-group col-md-2 col-xs-12" >
+				<form action="index.html.html" onSubmit="logout()">
+				<button class="btn btn-outline-dark"   type="submit">
+				LOG OUT
+			</button>
+					</form>
+			</div>
+  		</div>  
+	</nav>
+	<!--HEADER-END -->
+ <!--main start -->
+	<section class="kc-css " >
+		<div class="container name">
+		<div class="namecontainer ">
+			
+				<div id="kc-info" class="col-md-9 col-sm-9 ">
+					<div class="name-img">
+						<h1 class="cb">POST MALONE</h1>
+						<h3 class="cp">
+						"... I'm no good at goodbyes ... there no way i can save you cause i need to be save too... i'm no good at goodbyes." 
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="kc-row">
+		<div class="kc-row-container kc-container">
+			<div class="kc-wrap ">
+				<div class="kc-tab tab">
+					<button class="tablinks" >
+					BIOGRAPHY
+					</button>
+					<button class="tablinks" >
+					ALBUMS
+					</button>
+					<button class="tablinks" >
+					EVENTS
+					</button>
+					
+					<button class="tablinks" >
+					GALLERY
+					</button>
+				</div>
+					<div id="BIOGRAPHY" class="tabcontent">
+						<div class="container">
+						<div class="row">
+							<div class="col-12 col-md-12 col-sm-12" style="padding: 65px 0 15px 0"></div>
+							<div class="col-12 col-md-4 col-sm-4">
+								
+							<h5 class="available">AVAILABALE NOW ON :</h5>
+								<div class="row">	
+									<div class="col-md-6 col-6 col-sm-6 item" style="max-width: 150px;max-height: 64.81px; padding: 8px  "><a href="http://soundcloud.com"><img src="Images/Instrument/badge-soundcloud.png"></a></div>
+									<div class="col-md-6 col-6 col-sm-6 item" style="max-width: 150px;max-height: 64.81px; padding: 8px  "><a href="http://itunes.com"><img src="Images/Instrument/badge-itunes.png"></a></div>
+									<div class="col-md-6 col-6 col-sm-6 item" style="max-width: 150px;max-height: 64.81px; padding: 8px  "><a href="https://play.google.com/"><img src="Images/Instrument/badge-google_play.png"></a></div>
+									<div class="col-md-6 col-6 col-sm-6 item" style="max-width: 150px;max-height: 64.81px; padding: 8px  "><a href="https://www.beatport.com/"><img src="Images/Instrument/badge-beatport.png"></a></div>
+									<div class="col-md-6 col-6 col-sm-6 item" style="max-width: 150px;max-height: 64.81px; padding: 8px  "><a href="http://soundcloud.com"><img src="Images/Instrument/badge-bandcamp.png"></a></div>
+							   </div>
+								<h5 class="availabale" style="padding: 20px 0 8px">FOLLOW ME:</h5>
+								<div> <button class="small btn btn-dark fab fa-facebook-f" style="padding: 6px 8px"></button><button class="small btn btn-dark fab fa-twitter-square " style="padding: 6px; margin: 7px"></button>   </div>
+							</div>
+							<div class="col-12 col-md-8 col-sm-8">
+						<h3 class="w3-wide">POST MALONE</h3>
+						<p>Within five years of his debut, American rapper and singer/songwriter Post Malone went from genre novelty to certified superstar, amassing a string of Top Ten singles with a hybrid style that joined his unique vocal delivery, pained lyrics, and hip-hop production inspired as much by Kanye West as Tim McGraw. After the release of his 2015 quintuple-platinum single "White Iverson" off debut Stoney, he quickly ascended to the top of the pop mainstream in the late 2010s with a succession of multi-platinum hits that included chart-toppers "Rockstar" with 21 Savage and "Psycho" with Ty Dolla $ign from 2018's number one, Grammy-nominated album Beerbongs & Bentleys and the Grammy-nominated "Sunflower" with Swae Lee from 2019's Hollywood's Bleeding.</p>
+								<div class="col-12 col-md-8 sol-sm-8">
+						<h5 class="availabale" style="padding: 20px 0 8px">ACHIEVEMENT</h5>
+								<div class="award"><img src="Images/Instrument/post-malone-american-music-awards-2018-02.jpg" style="height: 30%">
+									<div class="heading"> 
+     									<h6> Stoney featured guests ranging from Justin Bieber to Migos' Quavo to Kehlani, peaking at number four on the Billboard 200 and later achieving multi-platinum certification</h6> 
+    								</div>
+									</div>
+						</div>
+							<div style="padding-top: 70px">
+								<h4>Post Malone Secures "Dick Clark New Years Rockin' Eve" Headlining Gig </h4>
+									<p>The legendary special has lined the stage with superstars time and time again, and this edition is no different. Come New Year's Eve, none other than the Bud Light Baron himself, Post Malone, will ring in the ball-drop as the headliner.  Along with Posty, BTS and Sam Hunt will also slide through for a performance, as will Alanis Morissette.
+Speaking with ET, executive producer for Dick Clark Productions Mark Bracco praised Post Malone, stating “We are so lucky to have Post Malone performing for the world right before the iconic ball drop. Add to that superstars like BTS, Sam Hunt and Alanis Morissette and it promises to be a memorable New Year’s Eve in Times Square.” A fair assessment, and a great look for a fun-loving chap like Post Malone. Will you be tuning in to see him take the stage - that is, if the Bud Light doesn't take him first?</p>
+									</div>	
+					</div>
+							
+				</div>			
+				</div>
+				</div>
+					<div id="ALBUMS" class="container tabcontent">
+						<div class="col-12 col-md-12 col-sm-12" style="padding: 65px 0px 12px">    </div>
+						<div class="row">
+							
+						 	<div class="col-6 col-md-4 col-sm-4">
+								<div class="box">
+									<a href="login.album's post.html"><img class="thumbnail container" src="Images/Album/post (1).jpg" style="margin: 0px; padding: 0px" ></a>
+									<div class="heading"> 
+     									<h6>T.O.P a member of BIG BANG, one of the best boy group ever in korea</h6> 
+    								</div>
+								</div>
+							</div>
+							<div class="col-6 col-md-4 col-sm-4 ">
+								<div class="box">
+									<a href="login.album's post.html"><img class="thumbnail" src="Images/Album/post (3).jpg"
+								 	style="margin: 0px; padding: 0px" ></a>
+									<div class="heading"> 
+     									<h6>T.O.P a member of BIG BANG, one of the best boy group ever in korea</h6> 
+    								</div>
+								</div>
+							</div>
+							<div class="col-6 col-md-4 col-sm-4 box">
+								<div class="box">
+									<a href="login.album's post.html"><img class="thumbnail" src="Images/Album/post (2).jpg"
+								 	style="margin: 0px; padding: 0px" ></a>
+									<div class="heading"> 
+     									<h6>T.O.P a member of BIG BANG, one of the best boy group ever in korea</h6> 
+    								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="EVENTS" class="tabcontent container">
+						<div class="row" style="margin-left: 50px; margin-right: 50px">
+						<div class="col-12 col-md-12 col-sm-12" style="padding: 35px; font-size: 50px"> WORLD TOUR 2020   </div>
+						
+							
+						
+						
+							<div class="col-12 col-md-12 col-sm-12">
+							<div class=" row" style="margin-left: 0px">
+				<a href="#" class="list-group-item list-group-item-action bg-light" style="margin: 5px">
+					<span>1.</span>
+					<img src="Images/Artist/post (11).jpg" class="img-hot100">
+					<span class="namesong" style="font-size: 20px"><u>28-09-2020</u></span>
+					<span class="nameartist">POST MALONE -- PARIS, FRANCE</span>
+					<span class="nameartist">COMING SOON</span>
+					<span class="icon">
+						<span style="margin-left: 45px" class="btn btn-success"><i class="fas fa-ticket-alt"></i><i class="fas fa-dollar-sign" style="margin-left: 10px"></i> </span>
+						<i class="fas fa-ellipsis-h"></i>
+					</span>
+				</a>
+				<a href="#" class="list-group-item list-group-item-action bg-light" style="margin: 5px">
+					<span>1.</span>
+					<img src="Images/Artist/post (11).jpg" class="img-hot100">
+					<span class="namesong" style="font-size: 20px"><u>30-09-2020</u></span>
+					<span class="nameartist">POST MALONE -- PARIS, FRANCE</span>
+					<span class="nameartist">COMING SOON</span>
+					<span class="icon">
+						<span style="margin-left: 45px" class="btn btn-success"><i class="fas fa-ticket-alt"></i><i class="fas fa-dollar-sign" style="margin-left: 10px"></i> </span>
+						<i class="fas fa-ellipsis-h"></i>
+					</span>
+				</a>
+				<a href="#" class="list-group-item list-group-item-action bg-light" style="margin: 5px">
+					<span>1.</span>
+					<img src="Images/Artist/post (11).jpg" class="img-hot100">
+					<span class="namesong" style="font-size: 20px"><u>04-10-2020</u></span>
+					<span class="nameartist">POST MALONE -- LONDON, ENGLAND</span>
+					<span class="nameartist">COMING SOON</span>
+					<span class="icon">
+						<span style="margin-left: 45px" class="btn btn-success"><i class="fas fa-ticket-alt"></i><i class="fas fa-dollar-sign" style="margin-left: 10px"></i> </span>
+						<i class="fas fa-ellipsis-h"></i>
+					</span>
+				</a>
+				<a href="#" class="list-group-item list-group-item-action bg-light" style="margin: 5px">
+					<span>1.</span>
+					<img src="Images/Artist/post (11).jpg" class="img-hot100">
+					<span class="namesong" style="font-size: 20px"><u>28-09-2020</u></span>
+					<span class="nameartist">POST MALONE -- PARIS, FRANCE</span>
+					<span class="nameartist">COMING SOON</span>
+					<span class="icon">
+						<span style="margin-left: 45px" class="btn btn-success"><i class="fas fa-ticket-alt"></i><i class="fas fa-dollar-sign" style="margin-left: 10px"></i> </span>
+						<i class="fas fa-ellipsis-h"></i>
+					</span>
+				</a>
+			</div>
+							</div>
+					</div>
+						</div>
+				
+					<div id="GALLERY" class="tabcontent container">
+						<div class="row">
+							<div class="col-6 col-md-4 col-sm-4"><img src="Images/Artist/post (3).jpg"></div>
+							<div class="col-6 col-md-4 col-sm-4"><img src="Images/Artist/post (20).jpg"></div>
+							<div class="col-6 col-md-4 col-sm-4"><img src="Images/Artist/post (16).jpg"></div>
+							<div class="col-12 col-md-6 col-sm-6"><img src="Images/Artist/post (12).jpg"></div>
+							<div class="col-12 col-md-2 col-sm-2"></div>
+						    <div class="col-12 col-md-4 col-sm-4"><img src="Images/Artist/post (7).jpg"></div>
+						</div>
+						<div class="row">
+							<div class="col-6 col-md-4 col-sm-4"><img src="Images/Artist/post (13).jpg"></div>
+							<div class="col-6 col-md-2 col-sm-2"></div>
+							<div class="col-12 col-md-6 col-sm-6" style="padding-top: 100px"><img src="Images/Artist/post (6).jpg"></div>
+						</div>
+					</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- tabs start-->
+	<script src="JS/artistlist.js"></script>
+	<!--FOOTER-START -->
+	<footer>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1171715609357!2d106.67768431433069!3d10.802336992303955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d9c8f45f99%3A0xd3312f808344c03b!2zNDQwLzMzIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIFBow7ogTmh14bqtbiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1575509300276!5m2!1svi!2s" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		<div class="container-fluid bg-light" style="text-align: center">
+		    <p style="color: black">CONTACT US FOR ADVERTISING</p>
+			<button class="button" style="background-color: #4267b2">
+				<i class="fab fa-facebook"></i>
+			</button>
+			<button class="button"  style="background-color:#eb4026">
+				<i class="fab fa-google-plus-g"></i>
+			</button>
+			<button class="button"  style="background-color:#1DB954">
+				 <i class="fab fa-spotify"></i>
+			</button>
+			<button class="button"  style="background-color:#29c5f6">
+				 <i class="fab fa-twitter"></i>
+			</button>
+			<button class="button" style="background-color:#ca212a">
+				<i class="fab fa-pinterest"></i>
+			</button>
+			
+		</div>	
+	
+	</footer>
+	<!--FOOTER-END -->
+</body>
+</html>

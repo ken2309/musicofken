@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="fontawesome-free-5.11.2-web/fontawesome-free-5.11.2-web/css/all.css">
+	<link rel="stylesheet" href="CSS/Homepage.css">
+	<link rel="stylesheet" href="CSS/News.css">
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="JS/search.js"></script>
+	<script src="JS/login.js"></script>
+	
+
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+</head>
+
+<body>
+	<!--HEADER-START -->
+	<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top" role="navigation">
+  		<a class="navbar-brand" href="login.index.html">
+			<h3 class="font-weight-bold" style="color:teal">KQT 
+				<span class="text-dark">music</span>	
+			</h3>
+		</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
+  		<div class="collapse navbar-collapse" id="mainmenu" >
+    		<ul class="navbar-nav col-md-6 col-xs-12">
+      			<li class="nav-item active">
+				<a href="login.index.html" class="nav-link">Home</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.news.html" class="nav-link">News</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.genres.html" class="nav-link">Genres</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.artist.html" class="nav-link">Artist</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.albums.html" class="nav-link">Album</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.intrument.html" class="nav-link">Instrument</a>
+				</li>
+			<li class="nav-item dropdown-submenu">
+				<a href="#" class="nav-link dropdown" data-toggle="dropdown">About Us</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="login.terms of use.html" class="dropdown-item">Terms of Use</a>
+					</li>
+					<li>
+						<a href="login.privacy policy.html" class="dropdown-item">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="login.about our ads.html" class="dropdown-item">About our Ads</a>
+					</li>
+		
+				</ul>
+			</li>
+    		</ul>
+				<form class="form-inline col-md-4 col-xs-12">
+						<div class="form-group">
+						<div class="input-group">
+						<input type="text" placeholder="Search album or artist.."
+				  		 class="form-control" id="h" onKeyUp="pa(this.value)">
+						<div class="input-group-append">
+						<a href="login.not result.html" class="fas fa-search" id="link"></a>
+						
+						</div>
+						</div>
+						</div>
+				</form>
+			<div class="registered btn-group col-md-2 col-xs-12" >
+				<form action="index.html.html" onSubmit="logout()">
+				<button class="btn btn-outline-dark"   type="submit">
+				LOG OUT
+			</button>
+					</form>
+			</div>
+  		</div>  
+	</nav>
+	<!--HEADER-END -->
+	
+	
+	<!--MAIN-START -->
+	<main style="margin-left: 15%">
+		
+<div class="container" id="banner">
+	<div class="row">
+		<div class="col-xs-12">
+  <div class="menu">
+    <label for="slide-dot-1"></label>
+    <label for="slide-dot-2"></label>
+    <label for="slide-dot-3"></label>
+  </div>
+  
+  <input id="slide-dot-1" type="radio" name="slides" checked>
+    <div class="slide slide-1">
+		<div class="banner-tittle">
+	<h1>News</h1>
+		<a href="News/login.new1.html" style="color: white">
+			<p style=" font-size: 20px">
+				Ally Brooke Announces First Solo Tour: See the Dates
+			</p>
+		</a>
+		</div>
+	</div>
+  
+  <input id="slide-dot-2" type="radio" name="slides">
+    <div class="slide slide-2">
+			<div class="banner-tittle">
+	<h1>News</h1>
+		<a href="News/login.new7.html" style="color: white">
+			<p style="font-size: 20px">
+				Coldplay Nabs Fifth Top Rock Albums No. 1 With 'Everyday Life'
+			</p>
+		</a>
+		</div>
+			</div>
+  
+  <input id="slide-dot-3" type="radio" name="slides">
+	<div class="slide slide-3">
+			<div class="banner-tittle">
+	<h1>News</h1>
+		<a href="News/login.new3.html" style="color:white">
+			<p style=" font-size: 20px">
+				The Weeknd Has a Trippy Vegas Night Out in 'Heartless' Lyric Video: Watch
+			</p>
+		</a>
+		</div>
+			</div>
+		</div></div></div>
+		
+		
+		<div class="container artist" style="padding-top: 100px">
+			<div class="row" style="background-color:rgb(25, 25, 25);border-radius:20px">
+			<div class="img col-md-6">
+            <img src="Images/Artist/post (22).jpg" alt="">
+			</div>
+			
+			<aside class="col-md-6" style="padding-top: 50px">
+			<h2 style="text-align: center;font-family: unifrakturmaguntia">POST MALONE</h2>
+				<p style="overflow-x:hidden;text-align: justify">
+					If there was a so-called tradition, the Austin Richard Post would have stepped on it and burned it. The man known as Post Malone does not go on an established path to success and fame, he always strives on every step. He went from performing remixes to friends in high school to collaborating with Kanye West, touring with Justin Bieber and hosting his own music festival, the Posty Fest.
+
+The Dallas singer began his career with the debut of his first single "White Iverson" on SoundCloud in February 2015. The video for the song gained 1 million views in a month and Post reached the top. high ever since. His single 8X "Congratulations", taken from Platinum 3X certified "Stoney", reached # 8 on the Billboard 100 list and he achieved even greater success on his next album. "Beerbongs and Bentleys" broke the record for the first day on Spotify, leveling up Platinum on release, breaking Michael Jackson's 34-year record for the number of consecutive weeks topping the Billboard Top R&B and Hip charts. -Hop Albums and nominated "Album of the Year" at the 61st Grammy.
+				</p>
+				<a href="login.postmalone.html" type="submit" class="btn btn-outline-light" style="margin-left: 200px">
+				Read article
+				</a>
+			</aside>
+		</div>
+			<div class="container" id="hot100">
+			<div class="row">
+				<a href="login.albums.html" style="color: white;font-family: unifrakturmaguntia" class="col-md-9 col-sm-6">
+					<h2>HOT ALBUM</h2>
+				</a>
+				<a href="login.albums.html" type="submit" class="btn btn-outline-light col-md-3 col-sm-6" style="margin-bottom: 10px">
+				Playing All
+				</a>
+			</div>
+			
+			<div class="list-group list-group-flush row">
+				<a href="login.album's post.html" class="list-group-item list-group-item-action bg-light">
+					<span>1.</span>
+					<img src="Images/Songs/10.jpg" class="img-hot100">
+					<span class="namesong">Love Poem</span>
+					<span class="nameartist">IU</span>
+					<span class="icon">
+						<i class="fas fa-heart"></i>
+						<i class="fas fa-ellipsis-h"></i>
+					</span>
+				</a>
+				<a href="login.album's post.html" class="list-group-item list-group-item-action bg-light">
+					<span>2.</span>
+					<img src="Images/Songs/12.jpg" class="img-hot100">
+					<span class="namesong">The Man</span>
+					<span class="nameartist">Taylor Swift</span>
+					<span class="icon">
+						<i class="fas fa-heart"></i>
+						<i class="fas fa-ellipsis-h"></i>
+					</span>
+				</a>
+				<a href="login.album's post.html" class="list-group-item list-group-item-action bg-light">
+					<span>3.</span>
+					<img src="Images/Songs/7.jpg" class="img-hot100">
+					<span class="namesong">Boy With Luv</span>
+					<span class="nameartist">BTS</span>
+					<span class="icon">
+						<i class="fas fa-heart"></i>
+						<i class="fas fa-ellipsis-h"></i>
+					</span>
+				</a>
+				<a href="login.album's post.html" class="list-group-item list-group-item-action bg-light">
+					<span>4.</span>
+					<img src="Images/Songs/16.jpg" class="img-hot100">
+					<span class="namesong">10,000 hours</span>
+					<span class="nameartist">Justin Bieber</span>
+					<span class="icon">
+						<i class="fas fa-heart"></i>
+						<i class="fas fa-ellipsis-h"></i>
+					</span>
+				</a>
+			</div>
+		</div>
+			
+			<div class="container" id="gallery" style="padding-top:150px;padding-left: 20px">
+				<a href="#" style="color: white;font-family: unifrakturmaguntia"><h2>SONGS</h2></a>
+		<div class="row" style="background-color:rgb(25, 25, 25);padding-left: 100px;padding-top: 50px;border-radius: 50px">
+			
+        
+        <div class="img-gallery">
+            <img src="Images/Songs/13.jpg" alt="">
+            <div class="txt-gallery">
+                <span><i class="far fa-heart"></i></span>
+				<p>MAROON 5</p>
+            </div>
+        </div>
+			 <div class="img-gallery">
+            <img src="Images/Songs/17.jpg" alt="">
+            <div class="txt-gallery">
+                <span><i class="far fa-heart"></i></span>
+				<p>TAYLOR SWIFT</p>
+            </div>
+        </div>
+        <div class="img-gallery">
+            <img src="Images/Songs/11.jpg" alt="">
+            <div class="txt-gallery">
+                <span><i class="far fa-heart"></i></span>
+				<p>BLACK PINK</p>
+            </div>
+        </div>
+        <div class="img-gallery">
+            <img src="Images/Songs/8.jpg" alt="">
+            <div class="txt-gallery">
+                <span><i class="far fa-heart"></i></span>
+				<p>BTS</p>
+            </div>
+        </div>
+        <div class="img-gallery">
+            <img src="Images/Songs/15.jpg" alt="">
+            <div class="txt-gallery">
+                <span><i class="far fa-heart"></i></span>
+				<p>CHARLIE PUTH</p>
+            </div>
+        </div>
+       
+			<div class="img-gallery">
+            <img src="Images/Songs/14.jpg" alt="">
+            <div class="txt-gallery">
+                <span><i class="far fa-heart"></i></span>
+				<p>JUSTIN BIEBER</p>
+            </div>
+        </div>
+		</div>
+    		</div>
+			
+			
+			
+			
+			<div class="container">
+				<div class="row">
+				<div style="background-color:rgb(25, 25, 25);margin-top: 100px;border-radius: 20px" class="col-md-3 col-sm-3">
+					<h4 style="font-family: unifrakturmaguntia">TAGS</h4>
+					<div>
+					<a href="#">
+					<button type="submit" class="btn btn-outline-light">
+						RAP
+					</button>
+					</a>
+					<a href="#">
+					<button type="submit" class="btn btn-outline-light">
+						EVENT
+					</button>
+						</a></div>
+					<div>
+					<a href="#">
+					<button type="submit" class="btn btn-outline-light">
+						INSTRUMENT
+					</button>
+					</a>
+					<a href="#">
+					<button type="submit" class="btn btn-outline-light">
+						POP
+					</button>
+					</a>
+					<a href="#">
+					<button type="submit" class="btn btn-outline-light">
+						CLASSICAL
+					</button>
+					</a>
+					</div>
+					<div>
+					<a href="#">
+					<button type="submit" class="btn btn-outline-light">
+						COLLECTIONS
+					</button>
+					</a>
+					<a href="#">
+					<button type="submit" class="btn btn-outline-light">
+						RELEASE
+					</button>
+					</a>
+					<a href="#">
+					<button type="submit" class="btn btn-outline-light">
+						GENRES
+					</button>
+					</a>
+					</div>
+				</div>
+				<div style="background-color:rgb(25, 25, 25);margin-top: 100px;margin-left: 40px;margin-right: 40px;border-radius: 20px;" class="col-md-4 col-sm-3">
+				<h4 style="font-family: unifrakturmaguntia">RECENT COMMENTS</h4>
+					<p style="padding-top: 10px">
+						<span><i class="fas fa-comment-dots"></i></span>
+						Mark drama on Song Of SONGS
+					</p>
+					<p>
+						<span><i class="fas fa-comment-dots"></i></span>
+						Maddy Doe on Album Of ALBUM
+					</p>
+					<p>
+						<span><i class="fas fa-comment-dots"></i></span>
+						Peter Swag on Album Of ALBUM
+					</p>
+					<p>
+						<span><i class="fas fa-comment-dots"></i></span>
+						Lara Croft on Album Of ARTIST
+					</p>
+				</div>
+					<div style="background-color:rgb(25, 25, 25);margin-top: 100px;border-radius: 20px;" class="col-md-4 col-sm-3">
+				<h4 style="font-family: unifrakturmaguntia">CATEGORIES</h4>
+					<div class="nav">
+					<ul class="nav-item" style="padding-left: 30px">
+						<li style="padding-top: 5px;padding-bottom: 5px">
+							<a href="#" style="color: white">
+								REVIEWS
+							</a>
+						</li>
+						<li style="padding-top: 5px;padding-bottom: 5px">
+							<a href="login.news.html" style="color: white;">
+								NEWS
+							</a>
+						</li>
+						<li style="padding-top: 5px;padding-bottom: 5px">
+							<a href="login.artist.html" style="color: white;">
+								ARTIST
+							</a>
+						</li>
+						<li style="padding-top: 5px;padding-bottom: 5px">
+							<a href="login.albums.html" style="color: white;">
+								ALBUM
+							</a>
+						</li>
+						<li style="padding-top: 5px;padding-bottom: 5px">
+							<a href="#" style="color: white;">
+								SONGS
+							</a>
+						</li>
+					</ul>	
+					</div>
+				</div>
+				</div>
+			</div></div>
+		
+	</main>
+	<!--MAIN-END -->
+		
+	
+	<!--FOOTER-START -->
+	<footer style="background: #292828;height: 400px; padding-bottom: 100px">
+		<hr color="#FFFFFF">
+		<div style="padding-top: "></div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1171715609357!2d106.67768431433069!3d10.802336992303955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d9c8f45f99%3A0xd3312f808344c03b!2zNDQwLzMzIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIFBow7ogTmh14bqtbiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1575509300276!5m2!1svi!2s" width="80%" height="300" frameborder="0" style="border:0;margin-left: 10%" allowfullscreen=""></iframe>
+		<div class="container-fluid" style="text-align: center;background: #292828">
+		    <p style="color: whitesmoke">CONTACT US FOR ADVERTISING</p>
+			<button class="button" style="background-color: #4267b2">
+				<i class="fab fa-facebook"></i>
+			</button>
+			<button class="button"  style="background-color:#eb4026">
+				<i class="fab fa-google-plus-g"></i>
+			</button>
+			<button class="button"  style="background-color:#1DB954">
+				 <i class="fab fa-spotify"></i>
+			</button>
+			<button class="button"  style="background-color:#29c5f6">
+				 <i class="fab fa-twitter"></i>
+			</button>
+			<button class="button" style="background-color:#ca212a">
+				<i class="fab fa-pinterest"></i>
+			</button>
+			
+		</div>	
+	
+	</footer>
+	<!--FOOTER-END -->
+	
+	
+	
+</body>
+</html>

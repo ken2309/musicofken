@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="fontawesome-free-5.11.2-web/fontawesome-free-5.11.2-web/css/all.min.css">
+	
+	<link rel="stylesheet" href="CSS/register.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="bg-img container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5" style="margin: auto; padding-top: 100px;padding-bottom: 100px">
+	<form class="form-check" method="get" onSubmit="return font()" action="login.index.html" >
+			<div class="logocontainer">
+				
+				<a href="index.html.html"><img src="Images/Artist/post (11).jpg" alt="logo" class="logo">
+				</a>
+				</div>
+				<div class="container">
+				<div class="container">
+					<label for="fullname">Full Name</label>
+					<div class="input-group mb-3">
+						<input id="user" onKeyUp="dangnhap()" class="form-control border-right-0"></input>
+							<span class="input-group-prepend">
+								<div class="input-group-text bg-transparent">
+									<i class="fas fa-user"></i>
+								</div>
+							</span>
+					</div>
+					
+					<label for="psw">Password</label>
+					<div class="input-group mb-3">
+						<input type="password" required placeholder="Password (7-16 characters)" onKeyUp="dangnhap()" class="form-control border-right-0" id="psw"></input>
+							<span class="input-group-prepend">
+								<div class="input-group-text bg-transparent">
+									<i class="fas fa-lock"></i>
+								</div>
+							</span>
+					</div>
+					<label for="psw">Confirm your password</label>
+					<div class="input-group mb-3">
+						<input type="password" required placeholder="Password (7-16 characters)"  class="form-control border-right-0" id="psw2"></input>
+							<span class="input-group-prepend">
+								<div class="input-group-text bg-transparent">
+									<i class="fas fa-lock"></i>
+								</div>
+							</span>
+					</div>
+					<label for="email">Email</label>
+					<div class="input-group mb-3">
+						<input type="email" required placeholder="Put your email address here " class="form-control border-right-0" id="email">
+							<span class="input-group-prepend">
+								<div class="input-group-text bg-transparent">
+									<i class="fas fa-envelope"></i>
+								</div>
+							</span>
+					</div>
+					<label for="birthday" >Year Of Birth (YYYY)</label>
+					<div class="input-group mb-3">
+						<input type="number" maxlength="4" class="form-control border-right-0">
+							<span class="input-group-prepend">
+								<div class="input-group-text bg-transparent">
+									<i class="fas fa-birthday-cake"></i>
+								</div>
+							</span>
+					</div>
+					<div class="input-group mb-3">
+						<input type="checkbox" checked="check" name="check">
+						<a>Stay up-to-date and sign up for our newsletter</a>
+					</div>
+					
+				
+					<button  type="submit" class="btn btn-primary btn-info" > CREATE ACCOUNT</button>
+					<div style="align-items: flex-end"><a href="login.html" style="color: aliceblue">Back to login</a></div>
+				</div>
+				
+			</div>
+			</form>
+		</div></div></div></div>
+	<script src="JS/register.js"></script>
+</body>
+</html>

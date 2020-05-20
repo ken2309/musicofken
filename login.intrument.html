@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="fontawesome-free-5.11.2-web/fontawesome-free-5.11.2-web/css/all.css">
+	<link rel="stylesheet" href="CSS/Homepage.css">
+	
+	<link rel="stylesheet" href="CSS/artistlist.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="JS/search.js"></script>
+	<script src="JS/login.js"></script>
+	
+
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+</head>
+
+<body>
+	<!--HEADER-START -->
+	<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top" role="navigation">
+  		<a class="navbar-brand" href="login.index.html">
+			<h3 class="font-weight-bold" style="color:teal">KQT 
+				<span class="text-dark">music</span>	
+			</h3>
+		</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
+  		<div class="collapse navbar-collapse" id="mainmenu" >
+    		<ul class="navbar-nav col-md-6 col-xs-12">
+      			<li class="nav-item active">
+				<a href="login.index.html" class="nav-link">Home</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.news.html" class="nav-link">News</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.genres.html" class="nav-link">Genres</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.artist.html" class="nav-link">Artist</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.albums.html" class="nav-link">Album</a>
+				</li>
+			<li class="nav-item">
+				<a href="login.intrument.html" class="nav-link">Instrument</a>
+				</li>
+			<li class="nav-item dropdown-submenu">
+				<a href="#" class="nav-link dropdown" data-toggle="dropdown">About Us</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="login.terms of use.html" class="dropdown-item">Terms of Use</a>
+					</li>
+					<li>
+						<a href="login.privacy policy.html" class="dropdown-item">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="login.about our ads.html" class="dropdown-item">About our Ads</a>
+					</li>
+		
+				</ul>
+			</li>
+    		</ul>
+				<form class="form-inline col-md-4 col-xs-12">
+						<div class="form-group">
+						<div class="input-group">
+						<input type="text" placeholder="Search album or artist.."
+				  		 class="form-control" id="h" onKeyUp="pa(this.value)">
+						<div class="input-group-append">
+						<a href="login.not result.html" class="fas fa-search" id="link"></a>
+						
+						</div>
+						</div>
+						</div>
+				</form>
+			<div class="registered btn-group col-md-2 col-xs-12" >
+				<form action="index.html.html" onSubmit="logout()">
+				<button class="btn btn-outline-dark"   type="submit">
+				LOG OUT
+			</button>
+					</form>
+			</div>
+  		</div>  
+	</nav>
+	<!--HEADER-END -->
+	<section class="container-fluid bg-img">
+	  <div>
+	    <h3 class="bg-name"><strong>INSTRUMENTS</strong></h3>
+	  </div>
+	</section>
+	<section>
+	<div class="tab row" style="border: none">
+		<div class=" kc-tab">
+				 <button class="tablinks active">ALL</button>
+              <button class="tablinks">GUITAR</button>
+              <button class="tablinks">PIANO</button>
+			 <button class="tablinks active">RECORDER</button>
+              <button class="tablinks">DRUM SET</button>
+              <button class="tablinks">SAXOPHONE</button>
+			 <button class="tablinks">TRUMPET</button>
+				</div>
+		</div>
+		
+		<div class="container">
+			<div id="ALL" class="tabcontent">
+			 <div class="row" style="padding-bottom: 20px">
+          <h1 align="center"></h1>
+          <div class="col-12 col-md-4 col-lg-4 col-sm-4">
+            <div class="box"> <img src="Images/Instrument/Schiller-Old-City-Taj-Bb-Trumpet-3.png"width="363" height="363" alt=""/>
+              <div class="box-content" onClick="showContent('TRUMPET')" >
+                <h4 class="title" >TRUMPET  </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-sm-4">
+            <div class="box"> <img src="Images/Instrument/0002190_yamaha-yrs24b-soprano-recorder.jpeg" width="363" height="363" alt=""/>
+              <div class="box-content" onClick="showContent('RECORDER')" >
+                <h4 class="title" >RECORDER  </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-sm-4">
+            <div class="box"> <img src="Images/Instrument/parts_viewer01_01a50824dd84117881911a39bbb6ed9b.webp" width="363" height="363" alt=""/>
+              <div class="box-content" onClick="showContent('PIANO')" >
+                <h4 class="title" >PIANO  </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+			<div class="row" style="padding-bottom: 20px">
+          <h1 align="center"></h1>
+          <div class="col-12 col-md-4 col-lg-4 col-sm-4">
+            <div class="box"> <img src="Images/Instrument/RSJ465C-31-41283b96b7a8ca9796cfc969e7d64439.jpg"width="363" height="363" alt=""/>
+              <div class="box-content" onClick="showContent('DRUM SET')" >
+                <h4 class="title" >DRUM SET  </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-sm-4">
+            <div class="box"> <img src="Images/Instrument/Đàn-Guitar-Acoustic-Taylor-Academy-A10.jpg" width="363" height="363" alt=""/>
+              <div class="box-content" onClick="showContent('GUITAR')" >
+                <h4 class="title" >GUITAR  </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-sm-4">
+            <div class="box"> <img src="Images/Instruments/yamaha-yas-280.jpg" width="363" height="363" alt=""/>
+              <div class="box-content" onClick="showContent('SAXOPHONE')" >
+                <h4 class="title" >SAXOPHONE  </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+			
+				
+			</div>
+<div id="GUITAR" class="tabcontent">
+			  <div class="row">
+		  <div class="col-12 col-md-4"><img src="Images/Instrument/Đàn-Guitar-Acoustic-Taylor-Academy-A10.jpg"/></div>
+			 <div class="col-md-8"><p>The guitar is a fretted musical instrument that usually has six strings.[1] It is typically played with both hands by strumming or plucking the strings with either a guitar pick or the finger(s)/fingernails of one hand, while simultaneously fretting (pressing the strings against the frets) with the fingers of the other hand. The sound of the vibrating strings is projected either acoustically, by means of the hollow chamber of the guitar (for an acoustic guitar), or through an electrical amplifier and a speaker.
+
+The guitar is a type of chordophone, traditionally constructed from wood and strung with either gut, nylon or steel strings and distinguished from other chordophones by its construction and tuning. The modern guitar was preceded by the gittern, the vihuela, the four-course Renaissance guitar, and the five-course baroque guitar, all of which contributed to the development of the modern six-string instrument.
+
+There are three main types of modern acoustic guitar: the classical guitar (Spanish guitar/nylon-string guitar), the steel-string acoustic guitar, and the archtop guitar, which is sometimes called a "jazz guitar". The tone of an acoustic guitar is produced by the strings' vibration, amplified by the hollow body of the guitar, which acts as a resonating chamber. The classical guitar is often played as a solo instrument using a comprehensive finger-picking technique where each string is plucked individually by the player's fingers, as opposed to being strummed. The term "finger-picking" can also refer to a specific tradition of folk, blues, bluegrass, and country guitar playing in the United States. The acoustic bass guitar is a low-pitched instrument that is one octave below a regular guitar.</p></div>
+			</div>
+			</div>
+			<div id="PIANO" class="tabcontent">
+			 <div class="row">
+		  <div class="col-12 col-md-4"><img src="Images/Instrument/parts_viewer01_01a50824dd84117881911a39bbb6ed9b.webp" onClick="onclick(PIANO)" /></div>
+			 <div class="col-md-8"><p>The piano is an acoustic, stringed musical instrument invented in Italy by Bartolomeo Cristofori around the year 1700 (the exact year is uncertain), in which the strings are struck by hammers. It is played using a keyboard, which is a row of keys (small levers) that the performer presses down or strikes with the fingers and thumbs of both hands to cause the hammers to strike the strings.
+
+The word piano is a shortened form of pianoforte, the Italian term for the early 1700s versions of the instrument, which in turn derives from gravicembalo col piano e forte and fortepiano. The Italian musical terms piano and forte indicate "soft" and "loud" respectively, in this context referring to the variations in volume (i.e., loudness) produced in response to a pianist's touch or pressure on the keys: the greater the velocity of a key press, the greater the force of the hammer hitting the strings, and the louder the sound of the note produced and the stronger the attack. The name was created as a contrast to harpsichord, a musical instrument that does not allow variation in volume; compared to the harpsichord, the first fortepianos in the 1700s had a quieter sound and smaller dynamic range.
+
+An acoustic piano usually has a protective wooden case surrounding the soundboard and metal strings, which are strung under great tension on a heavy metal frame. Pressing one or more keys on the piano's keyboard causes a padded hammer (typically padded with firm felt) to strike the strings. The hammer rebounds from the strings, and the strings continue to vibrate at their resonant frequency.</p></div>
+			</div>
+			</div>
+			<div id="RECORDER" class="tabcontent">
+		 <div class="row">
+		  <div class="col-12 col-md-4"><img src="Images/Instrument/0002190_yamaha-yrs24b-soprano-recorder.jpeg"/></div>
+			 <div class="col-md-8"><p>The recorder is a woodwind musical instrument in the group known as internal duct flutes—flutes with a whistle mouthpiece, also known as fipple flutes. A recorder can be distinguished from other duct flutes by the presence of a thumb-hole for the upper hand and seven finger-holes: three for the upper hand and four for the lower. It is the most prominent duct flute in the western classical tradition.
+
+Recorders are made in different sizes with names and compasses roughly corresponding to different vocal ranges. The sizes most commonly in use today are the soprano (aka "descant", lowest note C5), alto (aka "treble", lowest note F4), tenor (lowest note C4) and bass (lowest note F3). Recorders are traditionally constructed from wood and ivory, while most recorders made in recent years are constructed from molded plastic. The recorders' internal and external proportions vary, but the bore is generally reverse conical (i.e. tapering towards the foot) to cylindrical, and all recorder fingering systems make extensive use of forked fingerings.
+
+The recorder is first documented in Europe in the Middle Ages, and continued to enjoy wide popularity in the Renaissance and Baroque periods, but was little used in the Classical and Romantic periods. It was revived in the 20th century as part of the historically informed performance movement, and became a popular amateur and educational instrument. Composers who have written for the recorder include Monteverdi, Lully, Purcell, Handel, Vivaldi, Telemann, Johann Sebastian Bach, Paul Hindemith, Benjamin Britten, Leonard Bernstein, Luciano Berio, and Arvo Pärt. Today, there are many professional recorder players who demonstrate the instrument's full solo range and a large community of amateurs.
+
+The sound of the recorder is often described as clear and sweet, and has historically been associated with birds and shepherds. It is notable for its quick response and its corresponding ability to produce a wide variety of articulations. This ability, coupled with its open finger holes, allow it to produce a wide variety of tone colors and special effects. Acoustically, its tone is relatively pure and, when the edge is positioned in the center of the airjet, odd harmonics predominate in its sound (when the edge is decidedly off-center, an even distribution of harmonics occurs).</p></div>
+			</div>
+			</div>
+			<div id="DRUM SET" class="tabcontent">
+			   <div class="row">
+		  <div class="col-md-4"><img src="Images/Instrument/RSJ465C-31-41283b96b7a8ca9796cfc969e7d64439.jpg"/></div>
+			 <div class="col-md-8"><p>A drum kit — also called a drum set, trap set (an abbreviation of the word, "contraption"),[1] or simply drums — is a collection of drums and other percussion instruments, typically cymbals, which are set up on stands to be played by a single player,[2] with drumsticks held in both hands, and the feet operating pedals that control the hi-hat cymbal and the beater for the bass drum. A drum kit consists of a mix of drums (categorized classically as membranophones, Hornbostel-Sachs high-level classification 2) and idiophones – most significantly cymbals, but can also include the woodblock and cowbell (classified as Hornbostel-Sachs high-level classification 1).[3] In the 2000s, some kits also include electronic instruments (Hornbostel-Sachs classification 53). Also, both hybrid (mixing acoustic instruments and electronic drums) and entirely electronic kits are used.
+
+A standard modern kit (for a right-handed player), as used in popular music and taught in music schools,[4][5][6] contains:
+
+A snare drum, mounted on a stand, placed between the player's knees and played with drum sticks (which may include rutes or brushes)
+A bass drum, played by a pedal operated by the right foot, which moves a felt-covered beater
+One or more toms, played with sticks or brushes (usually three toms: rack tom 1 and 2, and floor tom)
+A hi-hat (two cymbals mounted on a stand), played with the sticks, opened and closed with left foot pedal (it can also produce sound with the foot alone)
+One or more cymbals, mounted on stands, played with the sticks
+All of these are classified as non-pitched percussion, allowing the music to be scored using percussion notation, for which a loose semi-standardized form exists for both the drum kit and electronic drums. The drum kit is usually played while seated on a stool known as a throne. While many instruments like the guitar or piano are capable of performing melodies and chords, most drum kits are unable to achieve this as they produce sounds of indeterminate pitch.[7] The drum kit is a part of the standard rhythm section, used in many types of popular and traditional music styles, ranging from rock and pop to blues and jazz. Other standard instruments used in the rhythm section include the piano, electric guitar, electric bass, and keyboards.
+
+Many drummers extend their kits from this basic configuration, adding more drums, more cymbals, and many other instruments including pitched percussion. In some styles of music, particular extensions are normal. For example, some rock and heavy metal drummers make use of double bass drums, which can be achieved with either a second bass drum or a remote double foot pedal.[8] Some progressive drummers may include orchestral percussion such as gongs and tubular bells in their rig. Some performers, such as some rockabilly drummers, play small kits that omit elements from the basic setup.</p></div>
+			</div>
+			</div>
+			<div id="SAXOPHONE" class="tabcontent">
+			 <div class="row">
+		  <div class="col-md-4"><img src="Images/Instrument/yamaha-yas-280.jpg"/></div>
+			 <div class="col-md-8"><p>The piano is an acoustic, stringed musical instrument invented in Italy by Bartolomeo Cristofori around the year 1700 (the exact year is uncertain), in which the strings are struck by hammers. It is played using a keyboard, which is a row of keys (small levers) that the performer presses down or strikes with the fingers and thumbs of both hands to cause the hammers to strike the strings.
+
+The word piano is a shortened form of pianoforte, the Italian term for the early 1700s versions of the instrument, which in turn derives from gravicembalo col piano e forte and fortepiano. The Italian musical terms piano and forte indicate "soft" and "loud" respectively, in this context referring to the variations in volume (i.e., loudness) produced in response to a pianist's touch or pressure on the keys: the greater the velocity of a key press, the greater the force of the hammer hitting the strings, and the louder the sound of the note produced and the stronger the attack. The name was created as a contrast to harpsichord, a musical instrument that does not allow variation in volume; compared to the harpsichord, the first fortepianos in the 1700s had a quieter sound and smaller dynamic range.
+
+An acoustic piano usually has a protective wooden case surrounding the soundboard and metal strings, which are strung under great tension on a heavy metal frame. Pressing one or more keys on the piano's keyboard causes a padded hammer (typically padded with firm felt) to strike the strings. The hammer rebounds from the strings, and the strings continue to vibrate at their resonant frequency.</p></div>
+			</div>
+			</div>
+			<div id="TRUMPET" class="tabcontent" >
+									
+		  <div class="row">
+		  <div class="col-md-4"><img src="Images/Instrument/Schiller-Old-City-Taj-Bb-Trumpet-3.png"/></div>
+			 <div class="col-md-8"><p>A trumpet is a brass instrument commonly used in classical and jazz ensembles. The trumpet group ranges from the piccolo trumpet with the highest register in the brass family, to the bass trumpet, which is pitched one octave below the standard B-flat or C Trumpet. Trumpet-like instruments have historically been used as signaling devices in battle or hunting, with examples dating back to at least 1500 BC. They began to be used as musical instruments only in the late 14th or early 15th century. Trumpets are used in art music styles, for instance in orchestras, concert bands, and jazz ensembles, as well as in popular music. They are played by blowing air through nearly-closed lips (called the player's embouchure), producing a "buzzing" sound that starts a standing wave vibration in the air column inside the instrument. Since the late 15th century they have primarily been constructed of brass tubing, usually bent twice into a rounded rectangular shape.
+
+There are many distinct types of trumpet, with the most common being pitched in B♭ (a transposing instrument), having a tubing length of about 1.48 m (4 ft 10 in). Early trumpets did not provide means to change the length of tubing, whereas modern instruments generally have three (or sometimes four) valves in order to change their pitch. There are eight combinations of three valves, making seven different tubing lengths, with the third valve sometimes used as an alternate fingering equivalent to the 1–2 combination. Most trumpets have valves of the piston type, while some have the rotary type. The use of rotary-valved trumpets is more common in orchestral settings (especially in German and German-style orchestras), although this practice varies by country. Each valve, when engaged, increases the length of tubing, lowering the pitch of the instrument. A musician who plays the trumpet is called a trumpet player or trumpeter.</p></div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<script src="JS/instrucment.js"></script>
+	<div class="container-fluid form" style="margin-top: 100px; padding-top: 70px; margin-bottom: 100px ">
+		<h4>LEAVE A REPLY</h4>
+		<form>
+			<div class="input-group">
+                            	
+                                <div class="input-group">
+                                <input type="text" required placeholder="EMAIL" class="form-control" />
+                                <!-- prepend Dang sau-->
+                            	<div class="input-group-append">
+                                	<span class="input-group-text" style="background:#FFFFFF; border-left: none">@</span>
+                                </div>
+                                
+                            </div>    
+                        </div>
+			<div class="form-group"> 
+					<label >   </label>
+                            <input type="number" id="phone" required placeholder="YOUR NUMBER" class="form-control"/>
+                        </div>
+                           
+			<div class="form-group">   
+                            <label>   </label>
+                            <textarea id="description" required placeholder="DESCRIPTION" class="form-control" style="height: 200px"></textarea>
+                        </div>
+			<div class="form-check" style="padding-left: 0px">
+						<input type="button" onClick="tks()" value="submit" class="btn btn-light btn-dark" style="width: 100px "/>
+			</div>
+			<div class="form-check">
+						<label>   </label>
+			</div>
+		
+		
+			</form>
+		
+	</div>
+	<!--FOOTER-START -->
+	<footer>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1171715609357!2d106.67768431433069!3d10.802336992303955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d9c8f45f99%3A0xd3312f808344c03b!2zNDQwLzMzIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIFBow7ogTmh14bqtbiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1575509300276!5m2!1svi!2s" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		<div class="container-fluid bg-light" style="text-align: center">
+		    <p style="color: black">CONTACT US FOR ADVERTISING</p>
+			<button class="button" style="background-color: #4267b2">
+				<i class="fab fa-facebook"></i>
+			</button>
+			<button class="button"  style="background-color:#eb4026">
+				<i class="fab fa-google-plus-g"></i>
+			</button>
+			<button class="button"  style="background-color:#1DB954">
+				 <i class="fab fa-spotify"></i>
+			</button>
+			<button class="button"  style="background-color:#29c5f6">
+				 <i class="fab fa-twitter"></i>
+			</button>
+			<button class="button" style="background-color:#ca212a">
+				<i class="fab fa-pinterest"></i>
+			</button>
+			
+		</div>	
+	
+	</footer>
+	<!--FOOTER-END -->
+</body>
+</html>

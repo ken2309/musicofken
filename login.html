@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="fontawesome-free-5.11.2-web/fontawesome-free-5.11.2-web/css/all.css">
+	<link rel="stylesheet" href="CSS/login.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="bg-img container-fluid">
+	<form method="get" class="form-check" onSubmit="return f()" action="login.index.html">
+			
+			
+				<div class="container">
+					
+					<div class="col-md-4" style="margin: auto;background: #FEFEFE;border-radius: 10%;width:100%;height:400px">
+				<label for="uname" style="padding-top: 50px"><b>Username</b></label>
+				<div class="input-group mb-3"><input type="text"   maxlength="30" minlength="8" id="user" required placeholder="Put your account here" class="form-control border-right-0"/>
+						<span class="input-group-append">
+                        	<div class="input-group-text bg-transparent">
+                        		<i class="fas fa-user"></i>
+                        	</div>
+                        </span>
+				</div>
+				<label for="psw"><b>Password</b></label>
+					<div class="input-group mb-3"><input type="password"    id="psw" required placeholder="Put your password here" class="form-control border-right-0"/>
+						<span class="input-group-append">
+                        	<div class="input-group-text bg-transparent">
+                        		<i class="fas fa-lock"></i>
+                        	</div>
+                     	</span>
+					</div>
+					<div class="check">
+				<span type="checkbox" checked="check" name="Remember">Remember me</span>
+					</div>
+		<div>
+				<button  type="submit" class="btn btn-info"><i class="fas fa-sign-in-alt"> Login</i></button>
+		</div>
+		<div>
+				<button type="button" class="btn btn- btn-outline-info"><i class="far fa-hand-point-right"> <a href="register.html">Register</a></i></button>
+		</div></div>
+			</div>
+			
+		</form>
+	
+	</div>
+	<script src="JS/login.js"></script>
+	
+</body>
+</html>
